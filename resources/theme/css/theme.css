@@ -1,3 +1,4 @@
+/* global rules */
 body{
     display: grid;
     margin:0px;
@@ -18,15 +19,19 @@ nav{
             padding:15px 20px 35px 20px;
             font-size:18px;
             text-decoration: none;
-            color:antiquewhite;
+            color:rgb(253, 241, 225);
+            border-radius: 10px;
         }
         a:hover{
-            background-color: antiquewhite;
+            background-color: rgb(253, 241, 225);
             color:rgb(98, 89, 78);
         }
         a#nav-search input{
             width:400px;
-            background-color: rgb(254, 242, 227);
+            padding: 5px;
+            background-color: rgb(253, 241, 225);
+            border-style:none;
+            border-radius: 10px;
         }
     }
 }
@@ -37,4 +42,38 @@ div.stage-main{
     padding: 20px;
     margin: 0 20px 20px 20px;
     background-color: white;
+}
+section{
+    display: grid;
+    width: 100%;
+    flex-direction: column;
+}
+h1,h2,h3,h4,h5{
+    font-style:italic;
+}
+
+/* helper rules */
+.content-centered{
+    display: grid;
+    justify-self: center;
+    flex-direction: column;
+    > *{
+        justify-self: center;
+    }
+}
+.self-centered{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.self-center-hor{
+    display: flex;
+    justify-self: center;
+}
+.self-center-ver{
+    display: flex;
+    align-items: center;
+}
+.w100 {
+    width: 100%;
 }
