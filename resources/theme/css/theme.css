@@ -2,9 +2,10 @@ body{
     display: grid;
     margin:0px;
     background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav{
-    background-color: antiquewhite;
+    background-color: rgb(98, 89, 78);
     height:50px;
 
     div{
@@ -16,12 +17,16 @@ nav{
         a {
             padding:15px 20px 35px 20px;
             font-size:18px;
+            text-decoration: none;
+            color:antiquewhite;
         }
         a:hover{
-            background-color: white;
+            background-color: antiquewhite;
+            color:rgb(98, 89, 78);
         }
         a#nav-search input{
             width:400px;
+            background-color: rgb(254, 242, 227);
         }
     }
 }

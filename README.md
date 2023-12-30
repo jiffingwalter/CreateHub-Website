@@ -3,4 +3,4 @@ A website made for users to show off their creative endeavors
 
 Made for practice by Justin Walter
 
-Plan is to use 
+Will be implemented with JS, Python/Django, and potentially React
