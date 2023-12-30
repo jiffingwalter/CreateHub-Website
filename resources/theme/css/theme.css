@@ -1,0 +1,35 @@
+body{
+    display: grid;
+    margin:0px;
+    background-color: grey;
+}
+nav{
+    background-color: antiquewhite;
+    height:50px;
+
+    div{
+        display:flex;
+        justify-content: center;
+        margin:0px;
+        height:20px;
+        
+        a {
+            padding:15px 20px 35px 20px;
+            font-size:18px;
+        }
+        a:hover{
+            background-color: white;
+        }
+        a#nav-search input{
+            width:400px;
+        }
+    }
+}
+div.stage-main{
+    display: flex;
+    justify-self: center;
+    width: 80%;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    background-color: white;
+}
