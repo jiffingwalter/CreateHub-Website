@@ -4,6 +4,7 @@ body{
     margin:0px;
     background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 875px;
 }
 nav{
     background-color: rgb(98, 89, 78);
@@ -12,11 +13,12 @@ nav{
     div{
         display:flex;
         justify-content: center;
+        align-items: center;
         margin:0px;
-        height:20px;
+        height:50px;
         
         a {
-            padding:15px 20px 35px 20px;
+            padding:7px 20px 7px 20px;
             font-size:18px;
             text-decoration: none;
             color:rgb(253, 241, 225);
@@ -26,18 +28,44 @@ nav{
             background-color: rgb(253, 241, 225);
             color:rgb(98, 89, 78);
         }
-        a#nav-search input{
-            width:400px;
-            padding: 5px;
-            background-color: rgb(253, 241, 225);
-            border-style:none;
-            border-radius: 10px;
+        a#nav-search-h{
+            padding: 0;
+            margin: 0 10px 0 10px;
+
+            input {
+                width: 400px;
+                padding: 10px;
+                background-color: rgb(253, 241, 225);
+                border-style: none;
+                border-radius: 10px;
+            }
+        }
+        a#nav-search-v{
+            display:none;
+        }
+    }
+}
+@media (max-width: 1050px) {
+    nav{
+        height:auto;
+
+        div {
+            flex-direction: column;
+            height: auto;
+
+            a#nav-search-h{
+                display:none;
+            }
+            a#nav-search-v{
+                display:block;
+            }
         }
     }
 }
 div.stage-main{
     display: flex;
     justify-self: center;
+    flex-direction: column;
     width: 80%;
     padding: 20px;
     margin: 0 20px 20px 20px;
