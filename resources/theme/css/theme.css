@@ -1,3 +1,10 @@
+/* colors to be converted to scss variables later */
+colors {
+    color:rgb(253, 241, 225); /* primary color */
+    color:rgb(98, 89, 78); /* secondary color */
+    color:rgb(255, 250, 243); /* accent */
+}
+
 /* global rules */
 body{
     display: grid;
@@ -35,6 +42,7 @@ nav{
             input {
                 width: 400px;
                 padding: 10px;
+                margin: 2px;
                 background-color: rgb(253, 241, 225);
                 border-style: none;
                 border-radius: 10px;
@@ -69,7 +77,13 @@ div.stage-main{
     width: 80%;
     padding: 20px;
     margin: 0 20px 20px 20px;
-    background-color: white;
+    background-color: rgb(253, 241, 225);
+}
+header{
+    background-color: rgb(98, 89, 78);
+    color:rgb(253, 241, 225);
+    border-radius: 15px;
+    padding: 20px;
 }
 section{
     display: grid;
@@ -78,9 +92,52 @@ section{
 }
 h1,h2,h3,h4,h5{
     font-style:italic;
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    padding: 0px;
+}
+label {
+    margin: 8px 0px 8px 0px;
+    font-weight: bold;
+}
+input {
+    padding: 8px;
+    margin-bottom:6px;
+    border-style: none;
+    border-radius: 8px;
+    width: 300px;
+}
+button {
+    margin-top: 20px;
+    padding: 8px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: bold;
+    width: 316px;
+}
+button:hover {
+    background-color: whitesmoke;
+}
+.window-floating{
+    max-width: 800px;
+    border-radius: 20px;
+    background-color: rgb(253, 241, 225);
+    padding:25px;
+    margin:12px;
 }
 
 /* helper rules */
+.column{
+    display:flex;
+    flex-direction: column;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+}
 .content-centered{
     display: grid;
     justify-self: center;
