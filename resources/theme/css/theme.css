@@ -30,6 +30,7 @@ nav{
             text-decoration: none;
             color:rgb(253, 241, 225);
             border-radius: 10px;
+            transition: background-color 0.1s, color 0.1s;
         }
         a:hover{
             background-color: rgb(253, 241, 225);
@@ -111,12 +112,14 @@ input {
 }
 button {
     margin-top: 20px;
+	width: 316px;
     padding: 8px;
     border-style: none;
     border-radius: 8px;
     background-color: white;
     font-weight: bold;
-    width: 316px;
+	cursor: pointer;
+	transition: background-color 0.1s, color 0.1s;
 }
 button:hover {
     background-color: whitesmoke;
