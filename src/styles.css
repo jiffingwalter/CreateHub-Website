@@ -1,0 +1,112 @@
+/* colors to be converted to scss variables later */
+colors {
+    color:rgb(253, 241, 225); /* primary color */
+    color:rgb(98, 89, 78); /* secondary color */
+    color:rgb(255, 250, 243); /* accent */
+}
+
+/* global rules */
+body{
+    display: grid;
+    margin:0px;
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 875px;
+}
+app-home{
+    display: grid;
+}
+div.stage-main{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    background-color: rgb(253, 241, 225);
+}
+header{
+    background-color: rgb(98, 89, 78);
+    color:rgb(253, 241, 225);
+    border-radius: 15px;
+    padding: 20px;
+}
+section{
+    display: grid;
+    width: 100%;
+    flex-direction: column;
+}
+h1,h2,h3,h4,h5{
+    font-style:italic;
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    padding: 0px;
+}
+label {
+    margin: 8px 0px 8px 0px;
+    font-weight: bold;
+}
+input {
+    padding: 8px;
+    margin-bottom:6px;
+    border-style: none;
+    border-radius: 8px;
+    width: 300px;
+}
+button {
+    margin-top: 20px;
+	width: 316px;
+    padding: 8px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.1s, color 0.1s;
+}
+button:hover {
+    background-color: whitesmoke;
+}
+.window-floating{
+    max-width: 800px;
+    border-radius: 20px;
+    background-color: rgb(253, 241, 225);
+    padding:25px;
+    margin:12px;
+}
+
+/* helper rules */
+.column{
+    display:flex;
+    flex-direction: column;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.content-centered{
+    display: grid;
+    justify-self: center;
+    flex-direction: column;
+    > *{
+        justify-self: center;
+    }
+}
+.self-centered{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.self-center-hor{
+    display: flex;
+    justify-self: center;
+}
+.self-center-ver{
+    display: flex;
+    align-items: center;
+}
+.w100 {
+    width: 100%;
+}
