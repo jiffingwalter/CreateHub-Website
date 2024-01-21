@@ -9,42 +9,50 @@
     <body>
         <div class="stage-main">
             <a href="../../index.html">Back to index</a>
-            <div class="window-floating row">
-                <section class="sec-signin">
-                    <header>
-                        <h1>Sign up to CreateHub</h1>
-                        <p>to make your talent visible to the world.</p>
-                    </header>
-                    <div class="sec-signin-inner column">
-                        <form>
-                            <label for="username">Username</label>
-                            <input type="text" name="username">
-                            <label for="email">Email</label>
-                            <input type="email" name="email">
-                            <label for="password">Password</label>
-                            <input type="password" name="password">
-                            <label for="confirmPassword">Confirm Password</label>
-                            <input type="password" name="confirmPassword">
-                            <button type="submit">Create Account</button>
-                        </form>
+            <div class="modal centered" id="signin-modal">
+                <div class="window-floating">
+                    <div id="modal-close" class="align-right">
+                        <button onclick="closeSigninModal()" id="button-close-modal">Close</button>
                     </div>
-                </section>
-                <section class="sec-signin">
-                    <header>
-                        <h1>Already have an account?</h1>
-                        <p>Log in here</p>
-                    </header>
-                    <div class="sec-signin-inner column">
-                        <form>
-                            <label for="username">Username</label>
-                            <input type="text" name="username">
-                            <label for="password">Password</label>
-                            <input type="password" name="password">
-                            <button type="submit">Log in</button>
-                        </form>
+                    <div class="row">
+                        <section class="sec-signin">
+                            <header>
+                                <h1>Sign up to CreateHub</h1>
+                                <p>to make your talent visible to the world.</p>
+                            </header>
+                            <div class="sec-signin-inner column">
+                                <form>
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                    <input type="password" name="confirmPassword">
+                                    <button type="submit">Create Account</button>
+                                </form>
+                            </div>
+                        </section>
+                        <section class="sec-signin">
+                            <header>
+                                <h1>Already have an account?</h1>
+                                <p>Log in here</p>
+                            </header>
+                            <div class="sec-signin-inner column">
+                                <form>
+                                    <label for="username">Username</label>
+                                    <input type="text" name="username">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password">
+                                    <button type="submit">Log in</button>
+                                </form>
+                            </div>
+                        </section>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
+        <script src="../js/main.js"></script>
     </body>
 </HTML>

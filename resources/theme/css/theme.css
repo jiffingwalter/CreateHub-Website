@@ -124,12 +124,31 @@ button {
 button:hover {
     background-color: whitesmoke;
 }
+button:active {
+    background-color: rgb(230, 230, 230);
+}
+button#button-close-modal{
+    width: 20%;
+    margin: 0 10px;
+}
+.modal{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(98, 89, 78, 0.5);
+}
 .window-floating{
     max-width: 800px;
     border-radius: 20px;
     background-color: rgb(253, 241, 225);
     padding:25px;
     margin:12px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* helper rules */
@@ -149,9 +168,9 @@ button:hover {
         justify-self: center;
     }
 }
-.self-centered{
+.centered{
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
 }
 .self-center-hor{
@@ -164,4 +183,8 @@ button:hover {
 }
 .w100 {
     width: 100%;
+}
+.align-right{
+    display: flex;
+    justify-content: flex-end;
 }
