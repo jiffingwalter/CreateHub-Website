@@ -21,13 +21,13 @@ const modals = {
             <div class="sec-signin-inner column">
                 <form>
                     <label for="username">Username</label>
-                    <input type="text" name="username">
+                    <input id="username" type="text" name="username" autocomplete="username">
                     <label for="email">Email</label>
-                    <input type="email" name="email">
+                    <input id="email" type="email" name="email" autocomplete="email">
                     <label for="password">Password</label>
-                    <input type="password" name="password">
+                    <input id="password" type="password" name="password">
                     <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" name="confirmPassword">
+                    <input id="confirmPassword" type="password" name="confirmPassword">
                     <button type="submit">Create Account</button>
                 </form>
             </div>
@@ -39,10 +39,10 @@ const modals = {
             </header>
             <div class="sec-signin-inner column">
                 <form>
-                    <label for="username">Username</label>
-                    <input type="text" name="username">
-                    <label for="password">Password</label>
-                    <input type="password" name="password">
+                    <label for="username-login">Username</label>
+                    <input id="username-login" type="text" name="username" autocomplete="username">
+                    <label for="password-login">Password</label>
+                    <input id="password-login" type="password" name="password">
                     <button type="submit">Log in</button>
                 </form>
             </div>

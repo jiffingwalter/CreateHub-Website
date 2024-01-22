@@ -38,7 +38,7 @@ nav{
         }
         a#nav-search-h{
             padding: 0;
-            margin: 0 10px 0 10px;
+            margin: 0 10px;
 
             input {
                 width: 400px;
@@ -53,8 +53,7 @@ nav{
             display:none;
         }
     }
-}
-@media (max-width: 1050px) {
+} @media (max-width: 1050px) {
     nav{
         height:auto;
 
@@ -75,10 +74,16 @@ div.stage-main{
     display: flex;
     justify-self: center;
     flex-direction: column;
-    width: 80%;
-    padding: 20px;
-    margin: 0 20px 20px 20px;
+    width: 1500px;
     background-color: rgb(253, 241, 225);
+} @media (max-width: 1517px) {
+    div.stage-main{
+        width: 100%;
+    }
+}
+footer{
+    background-color: black;
+    color: white;
 }
 header{
     background-color: rgb(98, 89, 78);
@@ -88,7 +93,6 @@ header{
 }
 section{
     display: grid;
-    width: 100%;
     flex-direction: column;
 }
 h1,h2,h3,h4,h5{
@@ -201,8 +205,9 @@ modal{
 
 /* modals and shared content */
 .sec-signin{
-    display:block;
-    margin:10px;
+    display: block;
+    margin: 10px;
+    width: 50%;
     background-color: rgb(240, 223, 199);
     border-radius: 20px;
 

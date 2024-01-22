@@ -3,7 +3,6 @@ import { getModal } from './modals.js';
 
 // modal control --------------------------------------------------------------------------------
 function openModal(modalName){
-    console.log("modal opened");
     const modal = document.createElement("modal");
     document.body.prepend(modal);
     modal.innerHTML = getModal(modalName);
@@ -19,7 +18,6 @@ function openModal(modalName){
     });
 
     function closeModal(){
-        console.log("modal closed");
         modal.remove();
     }
 }
