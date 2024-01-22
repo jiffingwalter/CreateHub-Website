@@ -1,14 +1,13 @@
 // MODALS MODULE - contains modal template and modal information for dynamic insertion into html
 // modal template and content
 export function getModal(modalName){
-    return `<div class="modal centered" id="modal">
-                <div class="window-floating">
-                    <div id="modal-close" class="align-right">
-                        <button id="button-close-modal">Close</button>
-                    </div>
-                        ${modals[modalName]}
+    return  `<div class="window-floating">
+                <div id="modal-buttons" class="align-right">
+                    <button id="button-close-modal">Close</button>
                 </div>
-            </div>`;
+                    ${modals[modalName]}
+            </div>
+            <span id="modal-background-close"></span>`;
 }
 
 const modals = {

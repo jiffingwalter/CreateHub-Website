@@ -4,21 +4,23 @@ import { getModal } from './modals.js';
 // modal control --------------------------------------------------------------------------------
 function openModal(modalName){
     console.log("modal opened");
-    const modal = document.createElement("div");
+    const modal = document.createElement("modal");
     document.body.prepend(modal);
     modal.innerHTML = getModal(modalName);
 
-    const modalElement = document.getElementById("modal");
     const closeModalButton = document.getElementById("button-close-modal");
-
+    const closeModalBackground = document.getElementById("modal-background-close");
     closeModalButton.addEventListener("click", event=>{
         event.preventDefault();
+        closeModal();
+    });
+    closeModalBackground.addEventListener("click",event=>{
         closeModal();
     });
 
     function closeModal(){
         console.log("modal closed");
-        modalElement.remove();
+        modal.remove();
     }
 }
 

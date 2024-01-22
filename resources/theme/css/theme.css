@@ -131,7 +131,7 @@ button#button-close-modal{
     width: 20%;
     margin: 0 10px;
 }
-.modal{
+modal{
     display: block;
     position: fixed;
     z-index: 1;
@@ -141,8 +141,18 @@ button#button-close-modal{
     height: 100%;
     overflow: auto;
     background-color: rgba(98, 89, 78, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span#modal-background-close{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
 }
 .window-floating{
+    z-index: 2;
     max-width: 800px;
     border-radius: 20px;
     background-color: rgb(253, 241, 225);
