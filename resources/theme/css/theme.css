@@ -188,3 +188,15 @@ button#button-close-modal{
     display: flex;
     justify-content: flex-end;
 }
+
+/* modals and shared content */
+.sec-signin{
+    display:block;
+    margin:10px;
+    background-color: rgb(240, 223, 199);
+    border-radius: 20px;
+
+    .sec-signin-inner{
+        padding:15px;
+    }
+}
